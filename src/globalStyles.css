@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
+    line-height: 1.3;
 }
 
 :root{
     --black:rgb(0, 0, 0);
     --white:rgb(255, 255, 255);
-    --nav-collor:rgb(126, 62, 62);
+    --nav-color:rgb(126, 62, 62);
     
 }

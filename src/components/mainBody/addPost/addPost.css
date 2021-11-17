@@ -1,0 +1,11 @@
+@import url(../../../globalStyles.css);
+
+.add-post {
+    padding: 50px;
+}
+
+@media screen and (max-width:900px) {
+    .add-post {
+        padding: 30px;
+    }
+}

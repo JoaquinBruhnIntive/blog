@@ -6,7 +6,7 @@
     justify-content: flex-start;
     padding: 30px;
     height:30vh;
-    border-bottom: var(--nav-collor) solid 1px;
+    border-bottom: var(--nav-color) solid 1px;
 }
 
 .post > img {

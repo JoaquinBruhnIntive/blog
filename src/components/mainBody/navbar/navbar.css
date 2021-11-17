@@ -4,7 +4,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    width: 100%;
 }
 
 nav > a {
@@ -15,9 +15,9 @@ nav > a {
     height: 100%;
     font-size: 1.3rem;
     flex-basis: 25%;
-    color: var(--nav-collor);
-    border-bottom: var(--nav-collor) solid 1px;
-    border-right: var(--nav-collor) solid 1px;
+    color: var(--nav-color);
+    border-bottom: var(--nav-color) solid 1px;
+    border-right: var(--nav-color) solid 1px;
 }
 
 @media screen and ( max-width: 900px ) {

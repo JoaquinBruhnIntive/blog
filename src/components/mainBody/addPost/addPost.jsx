@@ -2,7 +2,10 @@ import './addPost.css'
 
 const AddPost = () => {
     return(
-        <h2>AddPost</h2>
+        <section className="add-post">
+            <h2>Create your article</h2>
+            <form action=""></form>
+        </section>
     )
 }
 
