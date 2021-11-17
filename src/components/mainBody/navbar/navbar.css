@@ -1,0 +1,27 @@
+@import url(../../../globalStyles.css);
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav > a {
+    text-transform: capitalize;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 10px;
+    height: 100%;
+    font-size: 1.3rem;
+    flex-basis: 25%;
+    color: var(--nav-collor);
+    border-bottom: var(--nav-collor) solid 1px;
+    border-right: var(--nav-collor) solid 1px;
+}
+
+@media screen and ( max-width: 900px ) {
+    nav > a {
+        font-size: 1rem;
+    }
+}

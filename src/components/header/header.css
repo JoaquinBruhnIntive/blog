@@ -57,8 +57,17 @@ header {
 }
 
 @media screen and (max-width:900px) {
+
+    .header-welcome > h2 {
+        font-size: 3rem;
+    }
+
+    .header-welcome > div > p{
+        font-size: 2rem;
+    }
+
     .header-media > a{
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0.5rem;
     }
 }
@@ -69,8 +78,19 @@ header {
         height: 20vh;
         width: 100%;
     }
-
+    
     .header-welcome{
         display: none;
+    }
+    
+    .header-media > a{
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-bottom: var(--white) solid 1px;
+    }
+    
+    .header-media{
+        top: 0;
+        bottom: initial;
     }
 }
