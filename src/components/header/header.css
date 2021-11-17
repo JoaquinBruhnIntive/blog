@@ -1,0 +1,68 @@
+@import '../../globalStyles.css';
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    background-image: url(../../assets/backgrounds/backgroundHeader.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgb(17 16 19 / 51%);
+}
+
+.header-welcome > * {
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+}
+
+.header-welcome > h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 10px;
+    border: rgb(255, 255, 255, 0.5) 10px solid;
+}
+
+.header-welcome > div{
+    margin: 1rem;
+}
+.header-welcome > div > p{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+}
+
+.header-welcome > p {
+    margin: 10px;
+}
+
+.header-media{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+}
+
+.header-media > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    width: 25%;
+    padding: 1rem;
+    border-top: white 1px solid;
+    border-left: white 1px solid;
+    border-right: white 1px solid;
+}
+
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (max-width:568px) {
+    header {
+        height: 20vh;
+        width: 100%;
+    }
+}
