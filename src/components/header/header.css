@@ -57,12 +57,20 @@ header {
 }
 
 @media screen and (max-width:900px) {
-    
+    .header-media > a{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 @media screen and (max-width:568px) {
     header {
+        background-position: top;
         height: 20vh;
         width: 100%;
+    }
+
+    .header-welcome{
+        display: none;
     }
 }
