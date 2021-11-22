@@ -5,12 +5,12 @@ const AddPost = () => {
         <section className="add-post">
             <h2>Create your article</h2>
             <form >
-                <input type="text" placeholder="Title" maxLength="20"/>
-                <textarea placeholder="Article" maxLength="400"></textarea>
-                <input type="date" ></input>
+                <input type="text" name="title" required placeholder="Title" maxLength="20"/>
+                <textarea name="article" required placeholder="Article" maxLength="400"></textarea>
+                <input type="date" name="date" required ></input>
                 <div>
-                    <input type="text" placeholder="first tag" maxLength="12" />
-                    <input type="text" placeholder="second tag" maxLength="12" />
+                    <input type="text" name="tag1" required placeholder="first tag" maxLength="12" />
+                    <input type="text" name="tag2" required placeholder="second tag" maxLength="12" />
                 </div>
                 <input type="submit" id="post-submit" />
             </form>
