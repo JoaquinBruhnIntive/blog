@@ -23,27 +23,27 @@ const About = () => {
                         <img src={robThomas} alt="" />
                         <p>Rob Thomas</p>
                         <div>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
+                            <span><a href="https://twitter.com/">i</a></span>
+                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
+                            <span><a href="https://es-la.facebook.com/">i</a></span>
                         </div>
                     </div>
                     <div>
                         <img src={jenJillians} alt="" />
                         <p>Jen Jillians</p>
                         <div>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
+                            <span><a href="https://twitter.com/">i</a></span>
+                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
+                            <span><a href="https://es-la.facebook.com/">i</a></span>
                         </div>
                     </div>
                     <div>
                         <img src={tommyTikes} alt="" />
                         <p>Tommy Tikes</p>
                         <div>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
-                            <span><a href=""></a></span>
+                            <span><a href="https://twitter.com/">i</a></span>
+                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
+                            <span><a href="https://es-la.facebook.com/">i</a></span>
                         </div>
                     </div>
                 </div>

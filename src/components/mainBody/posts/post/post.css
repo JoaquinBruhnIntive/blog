@@ -1,78 +1,74 @@
 @import url(../../../../globalStyles.css);
 
-
 .post {
-    display: flex;
-    justify-content: flex-start;
-    padding: 30px;
-    height:30vh;
-    border-bottom: var(--nav-color) solid 1px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px;
+  height: 300px;
+  border-bottom: var(--nav-color) solid 1px;
 }
 
 .post > img {
-    width: 80px;
-    height: 80px;
-    margin: auto 20px;
+  width: 80px;
+  height: 80px;
+  margin: auto 20px;
 }
 
 .post > div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 70%;
-    padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  padding-left: 20px;
 }
 
-
 .post > div:nth-child(2) > h3 {
-    text-align: start;
-    margin-bottom: 1rem;
+  text-align: start;
+  margin-bottom: 1rem;
 }
 
 .post > div:nth-child(2) > p {
-    text-align: start;
-    margin-bottom: 1rem;
+  text-align: start;
+  margin-bottom: 1rem;
 }
 
 .post > div:nth-child(2) > div {
-    text-align: start;
+  text-align: start;
 }
 
 .post > div:nth-child(2) > div > span {
-    text-transform: capitalize;
-    font-size: 0.8rem;
-    padding: 5px;
-    margin: 5px;
-    color: rgb(95, 95, 95, 0.8);
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  padding: 5px;
+  margin: 5px;
+  color: rgb(95, 95, 95, 0.8);
 }
 
-.post > div:nth-child(2) > div > span:nth-child(1){
-    margin: 5px 5px 5px 0;
-    padding: 5px 5px 5px 0;
+.post > div:nth-child(2) > div > span:nth-child(1) {
+  margin: 5px 5px 5px 0;
+  padding: 5px 5px 5px 0;
 }
 
 .post > div:nth-child(2) > div > span:nth-child(2),
 .post > div:nth-child(2) > div > span:nth-child(3) {
-    border: rgb(95, 95, 95, 0.8) solid 1px;
-    border-radius: 50px;
+  border: rgb(95, 95, 95, 0.8) solid 1px;
+  border-radius: 50px;
 }
 
+@media screen and (max-width: 900px) {
+  .post {
+    padding: 10px;
+  }
+  .post > img {
+    margin: auto 10px;
+  }
 
-@media screen and ( max-width: 900px ) {
-    
-    .post {
-        padding: 10px;
-    }
-    .post > img {
-        margin: auto 10px;
-    }
-    
-    .post > div:nth-child(2) > p {
-        font-size: 0.9rem;
-    }
-    
-    .post > div:nth-child(2) > div > span {
-        font-size: 0.7rem;
-    }
+  .post > div:nth-child(2) > p {
+    font-size: 0.9rem;
+  }
+
+  .post > div:nth-child(2) > div > span {
+    font-size: 0.7rem;
+  }
 }

@@ -14,10 +14,10 @@ const Header = () => {
                 <p>by joaquin bruhn</p>
             </div>
             <div className="header-media">
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">youtube</a>
-                <a href="#">subscribe</a>
+                <a href="https://es-la.facebook.com/">facebook</a>
+                <a href="https://twitter.com/">twitter</a>
+                <a href="https://www.youtube.com/">youtube</a>
+                <a href="https://www.instagram.com/?hl=es">instagram</a>
             </div>
         </header>
     )

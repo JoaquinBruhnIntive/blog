@@ -1,28 +1,112 @@
 @import url(../../../globalStyles.css);
 
-.logIn{
-    padding: 50px;
+.logIn {
+  padding: 50px;
 }
 
+/* user not logged */
+
 .no-logged {
-    width: 100%;
-    height: 500px;
+  width: 100%;
 }
 
 .no-logged > h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .no-logged > form {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .no-logged > form > input {
-    margin: 40px;
+  margin: 40px;
+  font-size: 1.5rem;
+}
+
+.no-logged > form > button {
+  margin: 20px;
+  padding: 10px 30px;
+  font-size: 1.8rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 50px;
+}
+
+.no-logged > button {
+  margin: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 50px;
+}
+
+.no-logged > button:nth-child(4) {
+  color: var(--white);
+  background-color: rgb(13, 97, 255);
+}
+
+/* user logged in */
+
+.logged {
+  width: 100%;
+}
+
+.logged > h2 {
+  font-size: 2rem;
+}
+
+.logged > button {
+  margin: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 568px) {
+  .logIn {
+    padding: 20x;
+  }
+
+  .no-logged {
+    height: inherit;
+  }
+
+  .no-logged > h2 {
     font-size: 2rem;
+  }
+
+  .no-logged > form {
+    justify-content: flex-start;
+  }
+
+  .no-logged > form > input {
+    margin: 20px;
+    font-size: 1.3rem;
+  }
+
+  .no-logged > form > button {
+    margin: 20px;
+    padding: 7px 25px;
+    font-size: 1.4rem;
+  }
+
+  .no-logged > button {
+    margin: 20px;
+    padding: 7px 15px;
+    font-size: 1rem;
+  }
+
+  .logged > button {
+    margin: 30px 20px;
+    padding: 7px 20px;
+    font-size: 1.2rem;
+  }
 }
