@@ -37,7 +37,8 @@ const LogIn = ({ globalUser }) => {
 
     return(
         <section className="logIn">
-            { globalUser==null ?  
+            { globalUser==null  ?  
+            
             <div className="no-logged">
                 <h2>{logInStatus ? "Sign in" : "Log In"}</h2>
                 <form onSubmit={submitHandler}>
@@ -54,7 +55,9 @@ const LogIn = ({ globalUser }) => {
                     Access with Google
                 </button>
             </div>
+            
             :
+            
             <div className="logged">
                 <h2>Welcome</h2>
                 <button onClick={()=> signOut(auth)}>Log off and switch account</button>

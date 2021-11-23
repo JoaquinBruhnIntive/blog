@@ -1,5 +1,4 @@
 import React from "react";
-
 import './post.css'
 
 const Post = ({ postData }) => {
@@ -10,10 +9,20 @@ const Post = ({ postData }) => {
                 <h3>{postData.title}</h3>
                 <p>{postData.content}</p>
                 <div>
-                    <span>{postData.date}</span><span>{postData.tags.tag1}</span><span>{postData.tags.tag2}</span>
+                    <span>{postData.date}</span><span>{postData.tag1}</span><span>{postData.tag2}</span>
                 </div>
             </div>
         </div>
     )
 }
 export default Post
+// <div className="post">
+//     <img src={postData.background} alt="" />
+//     <div>
+//         <h3>{postData.title}</h3>
+//         <p>{postData.content}</p>
+//         <div>
+//             <span>{postData.date}</span><span>{postData.tags.tag1}</span><span>{postData.tags.tag2}</span>
+//         </div>
+//     </div>
+// </div>
