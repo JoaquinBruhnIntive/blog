@@ -14,7 +14,7 @@
   margin: auto 20px;
 }
 
-.post > div:nth-child(2) {
+.post > div {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,21 +23,21 @@
   padding-left: 20px;
 }
 
-.post > div:nth-child(2) > h3 {
+.post > div > h3 {
   text-align: start;
   margin-bottom: 1rem;
 }
 
-.post > div:nth-child(2) > p {
-  text-align: start;
-  margin-bottom: 1rem;
-}
-
-.post > div:nth-child(2) > div {
+.post > div > p {
   text-align: start;
 }
 
-.post > div:nth-child(2) > div > span {
+.post > div > div:nth-child(3) {
+  text-align: start;
+  margin: 1rem 0;
+}
+
+.post > div > div:nth-child(3) > span {
   text-transform: capitalize;
   font-size: 0.8rem;
   padding: 5px;
@@ -45,30 +45,54 @@
   color: rgb(95, 95, 95, 0.8);
 }
 
-.post > div:nth-child(2) > div > span:nth-child(1) {
+.post > div > div:nth-child(3) > span:nth-child(1) {
   margin: 5px 5px 5px 0;
   padding: 5px 5px 5px 0;
 }
 
-.post > div:nth-child(2) > div > span:nth-child(2),
-.post > div:nth-child(2) > div > span:nth-child(3) {
+.post > div > div:nth-child(3) > span:nth-child(2),
+.post > div > div:nth-child(3) > span:nth-child(3) {
   border: rgb(95, 95, 95, 0.8) solid 1px;
   border-radius: 50px;
+}
+
+.post > div > div:nth-child(5) {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.post > div > div:nth-child(5) > button {
+  width: 6rem;
+  padding: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 50px;
+  border: var(--black) solid 1px;
+}
+
+.post > div > div:nth-child(5) > button:nth-child(1) {
+  background-color: rgb(255, 255, 255);
+}
+
+.post > div > div:nth-child(5) > button:nth-child(2) {
+  background-color: rgb(255, 111, 111);
 }
 
 @media screen and (max-width: 900px) {
   .post {
     padding: 10px;
+    height: 350px;
   }
   .post > img {
     margin: auto 10px;
   }
 
-  .post > div:nth-child(2) > p {
+  .post > div > p {
     font-size: 0.9rem;
   }
 
-  .post > div:nth-child(2) > div > span {
+  .post > div > div > span {
     font-size: 0.7rem;
   }
 }

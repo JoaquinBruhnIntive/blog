@@ -59,7 +59,7 @@ const LogIn = ({ globalUser }) => {
             :
             
             <div className="logged">
-                <h2>Welcome</h2>
+                <h2>Welcome {globalUser.email}</h2>
                 <button onClick={()=> signOut(auth)}>Log off and switch account</button>
             </div>
             }
