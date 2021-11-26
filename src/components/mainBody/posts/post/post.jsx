@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import firebaseApp from "../../../../credentials";
 import { getFirestore, updateDoc, doc } from "firebase/firestore";
@@ -17,7 +18,6 @@ const Post = ({postData, globalUser, postList, setPostList }) => {
         await updateDoc(docuRef, {firebaseList: [...newPostList]});
 
         setPostList(newPostList)
-        console.log(newPostList)
     }
 
     return(
@@ -32,7 +32,6 @@ const Post = ({postData, globalUser, postList, setPostList }) => {
                 <p>Post by {postData.authorEmail}</p>
                 {globalUser!=null && globalUser.uid === postData.uid ?
                     <div>
-                        <button>edit post</button>
                         <button onClick={()=>deleteHandler(postData.id)}>delete post</button>
                     </div>
                 :
@@ -43,13 +42,3 @@ const Post = ({postData, globalUser, postList, setPostList }) => {
     )
 }
 export default Post
-// <div className="post">
-//     <img src={postData.background} alt="" />
-//     <div>
-//         <h3>{postData.title}</h3>
-//         <p>{postData.content}</p>
-//         <div>
-//             <span>{postData.date}</span><span>{postData.tags.tag1}</span><span>{postData.tags.tag2}</span>
-//         </div>
-//     </div>
-// </div>

@@ -1,0 +1,58 @@
+@import url(../../../globalStyles.css);
+
+.edit-post {
+  padding: 50px;
+  height: 80%;
+}
+
+.edit-post > form {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.edit-post > form > * {
+  margin: 10px;
+}
+
+.edit-post > form > input {
+  font-size: 1.3rem;
+}
+
+.edit-post > form > textarea {
+  font-size: 1.1rem;
+  width: 80%;
+  height: 300px;
+}
+
+.edit-post > form > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit-post > form > div > input {
+  margin-right: 10px;
+  width: 45%;
+}
+
+#post-submit {
+  padding: 5px 10px;
+  background-color: var(--white);
+  border: var(--black) solid 1px;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .edit-post {
+    padding: 30px;
+  }
+
+  .edit-post > form > textarea {
+    font-size: 1rem;
+    width: 90%;
+    height: 300px;
+  }
+}

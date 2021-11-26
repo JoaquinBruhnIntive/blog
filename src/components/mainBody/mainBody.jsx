@@ -27,7 +27,9 @@ const MainBody = () => {
     //State that updates the logged user
     const [ globalUser, setGlobalUser ] = useState(null);
     //State that updates the lists of posts
-    const [ postList, setPostList ] = useState(placeholderPost)
+    const [ postList, setPostList ] = useState([])
+
+
 
     useEffect(createDefaultPosts, [])
     //This function gets the post list from firebase and creates a default one using "placeHolderPost if none exist"
