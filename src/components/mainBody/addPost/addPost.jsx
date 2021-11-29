@@ -76,8 +76,8 @@ const AddPost = ({globalUser, postList, setPostList}) => {
                     <input type="file" name="newPostImg" id="newPostImg" placeholder="add and image" accept="image/*" />
                     <input type="date" name="date" id="newPostDate" required ></input>
                     <div>
-                        <input type="text" name="tag1" id="newPostTag1" placeholder="first tag" maxLength="12" required/>
-                        <input type="text" name="tag2" id="newPostTag2" placeholder="second tag" maxLength="12" />
+                        <input type="text" name="tag1" id="newPostTag1" placeholder="first tag" pattern="[\S]{3,12}" maxLength="12" title="this field only alowns between 3 to 12 characters and doesn´t allow any white paces " required/>
+                        <input type="text" name="tag2" id="newPostTag2" placeholder="second tag" pattern="[\S]{3,12}" maxLength="12" title="this field only alowns between 3 to 12 characters and doesn´t allow any white paces " />
                     </div>
                     <input type="submit" id="post-submit" />
                 </form>

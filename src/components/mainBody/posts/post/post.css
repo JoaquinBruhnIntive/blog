@@ -32,37 +32,31 @@
   text-align: start;
 }
 
-.post > div > div:nth-child(3) {
-  text-align: start;
-  margin: 1rem 0;
-}
-
-.post > div > div:nth-child(3) > span {
-  text-transform: capitalize;
+.post > div span {
   font-size: 0.8rem;
+  text-align: start;
   padding: 5px;
-  margin: 5px;
+  margin-right: 5px;
   color: rgb(95, 95, 95, 0.8);
 }
 
-.post > div > div:nth-child(3) > span:nth-child(1) {
-  margin: 5px 5px 5px 0;
-  padding: 5px 5px 5px 0;
+.post > div > div:nth-child(4) {
+  text-align: start;
+  margin: 0.5rem 0;
 }
 
-.post > div > div:nth-child(3) > span:nth-child(2),
-.post > div > div:nth-child(3) > span:nth-child(3) {
+.post > div > div:nth-child(4) > span {
   border: rgb(95, 95, 95, 0.8) solid 1px;
   border-radius: 50px;
 }
 
-.post > div > div:nth-child(5) {
+.post > div > div:nth-child(6) {
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
 
-.post > div > div:nth-child(5) > button {
+.post > div > div:nth-child(6) > button {
   width: 6rem;
   padding: 5px;
   margin-right: 10px;
@@ -71,7 +65,7 @@
   border: var(--black) solid 1px;
 }
 
-.post > div > div:nth-child(5) > button:nth-child(1) {
+.post > div > div:nth-child(6) > button:nth-child(1) {
   background-color: rgb(255, 111, 111);
 }
 

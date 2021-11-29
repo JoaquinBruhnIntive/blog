@@ -26,8 +26,9 @@ const Post = ({postData, globalUser, postList, setPostList }) => {
             <div>
                 <h3>{postData.title}</h3>
                 <p>{postData.content}</p>
+                <span>Date: {postData.date}</span>
                 <div>
-                    <span>{postData.date}</span><span>{postData.tag1}</span> {postData.tag2 !== "" ? <span>{postData.tag2}</span> : null }
+                    <span>{postData.tag1}</span> {postData.tag2 !== "" ? <span>{postData.tag2}</span> : null }
                 </div>
                 <p>Post by {postData.authorEmail}</p>
                 {globalUser!=null && globalUser.uid === postData.uid ?
