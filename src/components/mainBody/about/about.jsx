@@ -23,27 +23,27 @@ const About = () => {
                         <img src={robThomas} alt="" />
                         <p>Rob Thomas</p>
                         <div>
-                            <span><a href="https://twitter.com/">i</a></span>
-                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
-                            <span><a href="https://es-la.facebook.com/">i</a></span>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div>
                         <img src={jenJillians} alt="" />
                         <p>Jen Jillians</p>
                         <div>
-                            <span><a href="https://twitter.com/">i</a></span>
-                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
-                            <span><a href="https://es-la.facebook.com/">i</a></span>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                     <div>
                         <img src={tommyTikes} alt="" />
                         <p>Tommy Tikes</p>
                         <div>
-                            <span><a href="https://twitter.com/">i</a></span>
-                            <span><a href="https://www.instagram.com/?hl=es">i</a></span>
-                            <span><a href="https://es-la.facebook.com/">i</a></span>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                            <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
