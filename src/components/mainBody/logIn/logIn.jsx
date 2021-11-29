@@ -19,13 +19,16 @@ const googleProvider = new GoogleAuthProvider();
 
 
 const LogIn = ({ globalUser }) => {
+    //the state of logInStatus determines if the user is signing in or loggin in
     const [ logInStatus, setLogInStatus ] = useState(false);
 
+    //This function takes the values from the form and can create a new user or access with an existing one 
     async function submitHandler(e) {
         e.preventDefault();
         const email = e.target.userLogin.value;
         const pass = e.target.passLogin.value;
 
+        //Uses firebase functions to create a new user/access with an existing one
         if ( logInStatus ) {
             await createUserWithEmailAndPassword(auth, email, pass);
             
@@ -37,8 +40,8 @@ const LogIn = ({ globalUser }) => {
 
     return(
         <section className="logIn">
+            {/* If globalUser = null (there is no user already logged in) it shows the log in/sign in options */}
             { globalUser==null  ?  
-            
             <div className="no-logged">
                 <h2>{logInStatus ? "Sign in" : "Log In"}</h2>
                 <form onSubmit={submitHandler}>
@@ -55,9 +58,8 @@ const LogIn = ({ globalUser }) => {
                     Access with Google
                 </button>
             </div>
-            
             :
-            
+            // if there is a user logged in, it shows the log off buton that uses a firebase function
             <div className="logged">
                 <h2>Welcome {globalUser.email}</h2>
                 <button onClick={()=> signOut(auth)}>Log off and switch account</button>

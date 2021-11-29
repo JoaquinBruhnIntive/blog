@@ -8,11 +8,14 @@ const firestore = getFirestore(firebaseApp);
 const storage = getStorage(firebaseApp);
 
 const AddPost = ({globalUser, postList, setPostList}) => {
-
+    //Function that loads the img file into the DB´s storage and uploads the post into firebase
     async function formHandler(e){
         e.preventDefault()
         
         let imgUrl
+        //Detects if the file input is empty. 
+        //If it has a file, uploads it and sets the URL as a constat that is going to be set as the "img" property.
+        //If it doesn´t, it sets a preexisting placeholder as the img
         if(e.target.newPostImg.files[0] !== undefined){
             const imgFile = e.target.newPostImg.files[0];
             
@@ -25,6 +28,7 @@ const AddPost = ({globalUser, postList, setPostList}) => {
             imgUrl = "http://atrilco.com/wp-content/uploads/2017/11/ef3-placeholder-image.jpg";
         }
         
+        //takes the values from the form
         const authorEmail = globalUser.email;
         const uid = globalUser.uid;
         const title = e.target.newPostTitle.value;
@@ -34,11 +38,12 @@ const AddPost = ({globalUser, postList, setPostList}) => {
         const tag1 = e.target.newPostTag1.value;
         const tag2 = e.target.newPostTag2.value;
         
-        
+        //Creates the new post as an object and adds it to the array(postList) with all other existing post
         const newPostList = [
             ...postList,
             {
                 authorEmail:authorEmail,
+                //Uses the specific time frame of the post creation to give it an ID
                 id: +new Date(), 
                 uid:uid,
                 title:title,
@@ -50,11 +55,14 @@ const AddPost = ({globalUser, postList, setPostList}) => {
             }
         ];
 
+        //uploads the new array with the added Post to Firebase
         const docuRef = doc(firestore, "posts/postList");
         await updateDoc(docuRef, { firebaseList: [...newPostList] });
 
+        //updates the array localy
         setPostList(newPostList);
         
+        //resets the form inputs back to blank
         e.target.newPostTitle.value = "";
         e.target.newPostArticle.value = "";
         e.target.newPostImg.value = "";
@@ -66,6 +74,7 @@ const AddPost = ({globalUser, postList, setPostList}) => {
 
     return(
         <section className="add-post">
+            {/* The interaction to create posts is only avaliable to logged in users so it checks if there is one logged or not */}
             { globalUser==null ?
                 <h2>Please log in</h2>
                 :

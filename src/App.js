@@ -3,7 +3,6 @@ import MainBody from './components/mainBody/mainBody';
 
 import './App.css';
 
-// Parse.setAsyncStorage(AsyncStorage);
 
 function App() {
   return (
